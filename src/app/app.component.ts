@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LocationComponent } from '@stk/ui';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [LocationComponent],
+  template: ` <stk-ui-location value="Lisboa" /> `,
 })
 export class AppComponent {
-  title = 'stk-target';
+  place = 'Madrid';
 }
